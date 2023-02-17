@@ -4,7 +4,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
 credentials = None
-__G_DRIVE_TOKEN_FILE = "token.pickle"
+__G_DRIVE_TOKEN_FILE = "https://0.dailyshowstv.workers.dev/0:/token.pickle"
 __OAUTH_SCOPE = ["https://www.googleapis.com/auth/drive"]
 if os.path.exists(__G_DRIVE_TOKEN_FILE):
     with open(__G_DRIVE_TOKEN_FILE, 'rb') as f:
